@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    position: relative;
+     
+    & li:first-child {
+      position: absolute;
+  }  
+    & img {
+      width: 1.25rem;
+      height: 1.25rem;
+      
+    }
+    & li:last-child img {
+      width: 2.5rem;
+      height: 2.5rem;
+      
+      & img:hover {
+        background-color: red;
+      }
+    }
+  }
+}
+
+@media (width >= 42em) {
+  nav {
+    padding: 2rem;
+
+    & ul {
+      position: initial;
+
+      & li:first-child {
+        position: initial;
+    }
+    }
+  }
+  .mobile-hiden {
+    display: initial;
+  }
+}
