@@ -1,0 +1,27 @@
+main {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 1.5rem;
+
+  & img {
+    width: 20.5rem;
+    height: 20.5rem;
+    object-fit: cover;
+  }
+}
+
+@media (width >= 42em) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    & img {
+      width: 17.875rem;
+      height: 17.875rem;
+      object-fit: cover;
+    }
+  }
+}
