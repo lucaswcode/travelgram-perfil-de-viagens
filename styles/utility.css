@@ -1,7 +1,21 @@
+.container {
+  padding-inline: 2rem;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
 .mobile-hiden {
     display: none;
 }
 
 ul {
   list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
 }
